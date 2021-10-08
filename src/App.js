@@ -22,6 +22,10 @@ function App() {
       if(response.status === 200){
         let data = await response.json()
         let triviaElement = data[0]
+        if(triviaElement.question === "")
+        {
+          swal("Info","This particular question has no question text","info")
+        }
         setQuestion(triviaElement.question)
         setCategory(triviaElement.category.title)
         setAnswer(triviaElement.answer)
