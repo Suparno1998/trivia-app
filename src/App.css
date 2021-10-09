@@ -3,3 +3,8 @@
   margin-left: auto;
   margin-right: auto;
 }
+.score{}
+.life{}
+.scoreboard{
+  border : 1.5px solid black;
+}
