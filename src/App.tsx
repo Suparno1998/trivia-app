@@ -66,6 +66,7 @@ function App() {
     setInput(value)
   }
   useEffect(()=>{
+    document.title = "Suparno's Trivia App"
     getQuestion()
   },[])
   if(question === ""){
